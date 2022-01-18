@@ -2,14 +2,16 @@
 
 require_once __DIR__ . "/classes/Products.php";
 require_once __DIR__ . "/classes/User.php";
+require_once __DIR__ . "/classes/UserVip.php";
+require_once __DIR__ . "/classes/CreditCard.php";
+
 
 $new_product = new Product("Apple Iphone 13", "Available");
 $new_product->setPrice(1299.95);
 $new_product->setDiscount(37);
 var_dump($new_product);
 
-$new_user = new User();
-$new_user->setFirstName("Luca");
+$new_user = new User("Luca");
 $new_user->setLastName("Verthuy");
 var_dump($new_user);
 

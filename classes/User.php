@@ -1,5 +1,6 @@
 <?php 
 require_once __DIR__ . "/CreditCard.php";
+require_once __DIR__ . "/UserVip.php";
 
 class User{
 
@@ -10,8 +11,9 @@ class User{
   private $cart;
   private $payment_method;
 
-  function __construct(){
+  function __construct($_firstName){
     $this->payment_method = new CreditCard();
+    $this->firstName = $_firstName;
   }
 
   //setter
