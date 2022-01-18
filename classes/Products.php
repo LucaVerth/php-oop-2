@@ -48,6 +48,12 @@ class Product{
     return $this->discount;
   }
 
+  //methods
+  public function getFinalPrice(){
+    $finalPrice = $this->price - (($this->price * $this->discount) / 100);
+    return number_format($finalPrice, 2);
+  }
+
 
 }
 
