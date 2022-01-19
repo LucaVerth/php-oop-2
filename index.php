@@ -6,7 +6,7 @@ require_once __DIR__ . "/classes/UserVip.php";
 require_once __DIR__ . "/classes/CreditCard.php";
 
 
-$new_product = new Product("Apple Iphone 13", "Available");
+$new_product = new Product("Apple Iphone 13", "Available",);
 $new_product->setPrice(1299.95);
 $new_product->setDiscount(37);
 var_dump($new_product);
@@ -14,6 +14,9 @@ var_dump($new_product);
 $new_user = new User("Luca");
 $new_user->setLastName("Verthuy");
 var_dump($new_user);
+
+$new_VipUser = new UserVip("Gianni", 001);
+var_dump($new_VipUser);
 
 
 ?>

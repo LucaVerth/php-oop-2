@@ -10,6 +10,7 @@ class User{
   private $address; 
   private $cart;
   private $payment_method;
+  private $status;
 
   function __construct($_firstName){
     $this->payment_method = new CreditCard();
@@ -35,6 +36,9 @@ class User{
   public function setPaymentMethod($_payment_method){
     $this->payment_method = $_payment_method;
   }
+  public function setStatus($_status){
+    $this->status = $_status;
+  }
 
   //getter
   public function getFirstName(){
@@ -54,6 +58,9 @@ class User{
   }
   public function getPaymentMethod(){
     return $this->payment_method;
+  }
+  public function getStatus(){
+    return $this->status;
   }
   
 

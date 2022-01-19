@@ -10,7 +10,10 @@ class UserVip extends User{
     parent::__construct($_firstName);
     $this->vip_id = $_vip_id;
     $this->specialDiscount = 15;
+    
   }
 
-
+  public function setSpecialDiscount($_specialDiscount){
+    $this->specialDiscount = $_specialDiscount;
+  }
 }
